@@ -242,23 +242,75 @@ h1, h2, h3, h4, h5, h6 {
 		 -o-transition: all .1s ease-in-out;
 			transition: all .1s ease-in-out;
 }
-
-@media only screen and (min-width: 769px) {
-    .yVid {
-        width: 7680px;
-        height: 360px;
-        margin: 0 auto;
-    }
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
-
-@media only screen and (max-width: 768px) {
-    .yVid {
-        width: 650px;
-        height: 315px;
-        margin: 0 auto;
-    }
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
 }
-
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+input[type= email] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+input[type=email]:focus {
+    border: 3px solid #555;
+}
+input[type= number] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+input[type=number]:focus {
+    border: 3px solid #555;
+}
+input[type= password] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+input[type=password]:focus {
+    border: 3px solid #555;
+}
 
 /* ==========================================================================
    Wrap Sections
@@ -463,6 +515,10 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transition: background-color 0.4s;
   -o-transition: background-color 0.4s;
   transition: background-color 0.4s;
+}
+
+.video_player {
+    align-content: center;
 }
 .project .overlay {
   position: absolute;

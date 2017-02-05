@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>document</title>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+	
+    <style type="text/css">
+    input[type= email] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+input[type=email]:focus {
+    border: 3px solid #555;
+        }
+    
+    input[type= password] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+input[type=password]:focus {
+    border: 3px solid #555;
+        }
+        .button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button {font-size: 10px;}  
+    </style>
+</head>
+<body>
+	
+<button id="myButton" class="button" >Home</button>
+
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "index.html";
+    }
+    
+    
+</script>
+  
+   
+    
+    
+	<section>
+		<form action="">
+		Email Id:<input type="email" name="email" required><br><br>
+		password:<input type="password" name="password"><br><br>
+		
+		<button type="submit" class="button button2">LogIn</button>
+		</form>
+    </section>
+     <p>SIGN IN AS:</p>
+    <button id="myButton1" class="button" >Parent</button>
+<script type="text/javascript">
+    document.getElementById("myButton1").onclick = function () {
+        location.href = "parent.html";
+    } </script>
+    <button id="myButton2" class="button" >Student</button>
+    <script type="text/javascript">
+    document.getElementById("myButton2").onclick = function () {
+        location.href = "student.html";
+    }</script>
+    <button id="myButton3" class="button" >Teacher</button>
+    <script type="text/javascript">
+    document.getElementById("myButton3").onclick = function () {
+        location.href = "teacher.html";
+    }</script>
+</body>
+</html>
